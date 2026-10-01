@@ -429,6 +429,58 @@ section:before{content:"";position:absolute;left:0;top:0;width:68px;height:4px;b
  .favorite-gallery img{max-height:190px!important}
  .favorite-gallery figure:nth-child(n){transform:none!important}
 }
+</style><style id="true-collage-layout">
+/* True editorial collage — final visual layer */
+.favorite-gallery{
+ display:grid!important;
+ grid-template-columns:repeat(12,minmax(0,1fr))!important;
+ grid-auto-flow:dense!important;
+ gap:8px!important;
+ align-items:center!important;
+ padding:24px 18px!important;
+ width:min(1000px,calc(100% - 36px))!important;
+ isolation:isolate!important
+}
+.favorite-gallery:before{
+ content:"";position:absolute!important;left:2%!important;right:2%!important;top:50%!important;
+ height:1px!important;background:rgba(255,255,255,.13)!important;z-index:-2!important
+}
+.favorite-gallery figure{
+ grid-column:span 4!important;
+ padding:5px!important;
+ background:#f4f1ea!important;
+ box-shadow:0 10px 25px rgba(0,0,0,.22)!important;
+ z-index:1!important
+}
+.favorite-gallery img{max-height:210px!important;background:#111!important}
+.favorite-gallery figure:nth-child(1){grid-column:1/span 5!important;grid-row:1/span 2!important;transform:rotate(-1.2deg) translateY(4px)!important;z-index:2!important}
+.favorite-gallery figure:nth-child(2){grid-column:6/span 3!important;transform:rotate(1.8deg) translate(-8px,-15px)!important;z-index:4!important}
+.favorite-gallery figure:nth-child(3){grid-column:9/span 4!important;transform:rotate(-.8deg) translate(-15px,10px)!important;z-index:3!important}
+.favorite-gallery figure:nth-child(4){grid-column:5/span 4!important;transform:rotate(.8deg) translate(4px,-7px)!important;z-index:5!important}
+.favorite-gallery figure:nth-child(5){grid-column:9/span 3!important;transform:rotate(-1.8deg) translate(-7px,-14px)!important;z-index:6!important}
+.favorite-gallery figure:nth-child(6){grid-column:2/span 3!important;transform:rotate(1.4deg) translate(13px,-9px)!important;z-index:4!important}
+.favorite-gallery figure:nth-child(7){grid-column:6/span 4!important;transform:rotate(-.7deg) translateY(-10px)!important;z-index:3!important}
+.favorite-gallery figure:after{
+ content:"";display:block!important;position:absolute!important;width:38px!important;height:7px!important;
+ top:-5px!important;left:50%!important;transform:translateX(-50%) rotate(-2deg)!important;
+ background:rgba(238,117,30,.92)!important;z-index:7!important
+}
+.favorite-gallery figcaption{
+ background:#111!important;color:#fff!important;border:0!important;
+ left:9px!important;bottom:9px!important;padding:5px 7px!important
+}
+.division-gallery,.electrical-visual.division-gallery{margin:12px auto 30px!important}
+.division-gallery figure:first-child,.electrical-visual.division-gallery figure:first-child{grid-column:1/span 5!important}
+.photo-story{padding:6px 0 22px!important}
+@media(max-width:700px){
+ .favorite-gallery{grid-template-columns:repeat(6,minmax(0,1fr))!important;width:calc(100% - 18px)!important;padding:18px 8px!important;gap:6px!important}
+ .favorite-gallery figure:nth-child(n){grid-column:span 3!important;grid-row:auto!important;transform:none!important}
+ .favorite-gallery figure:nth-child(1){grid-column:1/span 4!important;transform:rotate(-1deg)!important}
+ .favorite-gallery figure:nth-child(2){grid-column:4/span 3!important;transform:rotate(1deg) translateY(10px)!important}
+ .favorite-gallery figure:nth-child(3){grid-column:1/span 3!important;transform:rotate(.6deg)!important}
+ .favorite-gallery figure:nth-child(4){grid-column:3/span 4!important;transform:rotate(-.8deg) translateY(-6px)!important}
+ .favorite-gallery img{max-height:175px!important}
+}
 </style></head><body>
 <header class="hero">
 <div class="hero-bg vision-bg">
