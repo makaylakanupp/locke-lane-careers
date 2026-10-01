@@ -567,6 +567,66 @@ section:before{content:"";position:absolute;left:0;top:0;width:68px;height:4px;b
  .construction-gallery{padding-left:8px!important}
  .electrical-visual.division-gallery{padding-right:8px!important}
 }
+</style><style id="tight-masonry-gallery">
+/* Tight masonry layout: preserve full images without grid-row dead space */
+.favorite-gallery,
+.construction-gallery,
+.division-gallery,
+.electrical-visual.division-gallery{
+ display:block!important;
+ columns:3!important;
+ column-gap:10px!important;
+ width:min(1020px,calc(100% - 40px))!important;
+ margin:0 auto!important;
+ padding:0!important;
+ border:0!important;
+ height:auto!important;
+}
+.favorite-gallery figure,
+.favorite-gallery figure:nth-child(n),
+.construction-gallery figure:nth-child(n),
+.division-gallery figure:nth-child(n),
+.electrical-visual.division-gallery figure:nth-child(n){
+ display:inline-block!important;
+ width:100%!important;
+ height:auto!important;
+ margin:0 0 10px!important;
+ padding:0!important;
+ break-inside:avoid!important;
+ position:relative!important;
+ inset:auto!important;
+ grid-column:auto!important;
+ grid-row:auto!important;
+ transform:none!important;
+ overflow:hidden!important;
+ background:#111!important;
+ vertical-align:top!important;
+}
+.favorite-gallery img,
+.favorite-gallery figure:nth-child(n) img{
+ display:block!important;
+ width:100%!important;
+ height:auto!important;
+ max-height:none!important;
+ object-fit:contain!important;
+ margin:0!important;
+ padding:0!important;
+ background:#111!important;
+}
+.favorite-gallery figcaption{
+ left:0!important;bottom:0!important;
+ padding:6px 9px!important;
+ background:rgba(12,13,14,.9)!important;
+ border-left:3px solid var(--o)!important;
+}
+.photo-story{padding:8px 0 28px!important}
+.division-gallery,.electrical-visual.division-gallery{margin:12px auto 28px!important}
+@media(max-width:800px){
+ .favorite-gallery,.construction-gallery,.division-gallery,.electrical-visual.division-gallery{
+  columns:2!important;column-gap:7px!important;width:calc(100% - 24px)!important
+ }
+ .favorite-gallery figure,.favorite-gallery figure:nth-child(n){margin-bottom:7px!important}
+}
 </style></head><body>
 <header class="hero">
 <div class="hero-bg vision-bg">
