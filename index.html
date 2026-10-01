@@ -62,6 +62,46 @@ section:before{content:"";position:absolute;left:0;top:0;width:68px;height:4px;b
  .division-visual .dv-label,.electrical-visual .dv-label{left:26px!important;right:auto!important;bottom:18px!important}
  .vet-photo img{object-fit:contain!important}
 }
+</style><style>
+/* Photo-fit refinement: preserve every complete image and let frames follow the photography. */
+.hero{min-height:auto!important;padding-top:0!important}
+.hero-bg{position:relative!important;inset:auto!important;width:100%!important;display:block!important;opacity:.58!important;background:#090909!important}
+.hero-bg .hero-main{position:relative!important;inset:auto!important;width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;display:block!important}
+.hero-bg .hero-cut{display:none!important}
+.hero .w{position:absolute!important;left:50%!important;bottom:0!important;transform:translateX(-50%)!important}
+.hero:after{z-index:1!important;background:linear-gradient(0deg,rgba(0,0,0,.96) 1%,rgba(0,0,0,.72) 38%,rgba(0,0,0,.12) 78%)!important}
+
+.photo-story{padding:44px 0 72px!important}
+.photo-board{width:min(1120px,92vw)!important;display:grid!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;grid-template-areas:"a b" "a c"!important;gap:16px!important;padding:0!important}
+.photo-board figure{position:relative!important;inset:auto!important;width:100%!important;height:auto!important;min-height:0!important;transform:none!important;clip-path:none!important;display:block!important;background:#111!important;box-shadow:none!important}
+.photo-board figure img{width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;display:block!important}
+.photo-a{grid-area:a!important;align-self:center!important}.photo-b{grid-area:b!important}.photo-c{grid-area:c!important}
+.photo-stamp{left:48%!important;top:45%!important}
+
+.division-visual{width:min(1080px,92vw)!important;height:auto!important;margin:34px auto 72px!important;display:grid!important;grid-template-columns:minmax(0,1.45fr) minmax(0,.75fr)!important;gap:16px!important;align-items:center!important;padding:0!important;background:transparent!important}
+.division-visual figure,.division-visual .dv-main,.division-visual .dv-small,.electrical-visual .dv-main,.electrical-visual .dv-small{position:relative!important;inset:auto!important;width:100%!important;height:auto!important;transform:none!important;clip-path:none!important;border:0!important;background:#111!important}
+.division-visual img{width:100%!important;height:auto!important;max-height:none!important;object-fit:contain!important;display:block!important}
+.division-visual .dv-label{left:18px!important;right:auto!important;bottom:-18px!important}
+
+.vet{min-height:0!important;display:grid!important;grid-template-columns:minmax(0,1fr) minmax(320px,.72fr)!important;padding:0!important}
+.vet .w{grid-column:1!important;grid-row:1!important;padding-top:72px!important;padding-bottom:72px!important}
+.vet-photo{position:relative!important;inset:auto!important;grid-column:2!important;grid-row:1!important;display:flex!important;align-items:center!important;background:#101010!important;overflow:hidden!important}
+.vet-photo:after{background:linear-gradient(90deg,#191919 0%,transparent 18%)!important}
+.vet-photo img{width:100%!important;height:auto!important;object-fit:contain!important;display:block!important}
+
+@media(max-width:700px){
+ .hero-bg .hero-main{min-height:0!important}
+ .hero .w{position:relative!important;left:auto!important;bottom:auto!important;transform:none!important;margin-top:-52%!important;padding-top:36%!important;background:linear-gradient(0deg,#080808 0%,rgba(8,8,8,.96) 55%,transparent 100%)!important}
+ .photo-story{padding:28px 0 52px!important}
+ .photo-board{width:100%!important;grid-template-columns:1fr!important;grid-template-areas:"a" "b" "c"!important;gap:12px!important;padding:0 16px!important}
+ .photo-stamp{position:relative!important;left:auto!important;top:auto!important;margin:-22px 0 8px 12px!important;width:max-content!important}
+ .division-visual{width:100%!important;grid-template-columns:1fr!important;gap:12px!important;padding:0 16px!important;margin:26px auto 54px!important}
+ .division-visual .dv-label,.electrical-visual .dv-label{left:28px!important;right:auto!important;bottom:-14px!important}
+ .vet{display:flex!important;flex-direction:column!important}
+ .vet-photo{order:1!important;width:100%!important}
+ .vet-photo:after{background:linear-gradient(0deg,#191919 0%,transparent 22%)!important}
+ .vet .w{order:2!important;padding-top:46px!important;padding-bottom:46px!important}
+}
 </style></head><body>
 <header class="hero">
 <div class="hero-bg vision-bg">
