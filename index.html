@@ -743,7 +743,7 @@ section:before{content:"";position:absolute;left:0;top:0;width:68px;height:4px;b
   <div class="buttons"><a class="btn fill" href="#construction">Explore Construction</a><a class="btn" href="#electrical">Explore Electrical</a></div>
 </div>
 </header>
-<section class="quick-apply"><div class="w"><div><div class="eyebrow">Ready to Get Started?</div><h2>Build Your Career <span class="o">With Locke-Lane.</span></h2><p>Interested in an internship, co-op, or full-time opportunity with Locke-Lane Construction or Locke-Lane Electric? Tell us a little about yourself and start the conversation.</p></div><a class="btn fill quick-apply-btn" href="#join-our-team">Apply Now →</a></div></section>
+<section class="quick-apply"><div class="w"><div><div class="eyebrow">Ready to Get Started?</div><h2>Build Your Career <span class="o">With Locke-Lane.</span></h2><p>Interested in an internship, co-op, or full-time opportunity with Locke-Lane Construction or Locke-Lane Electric? Tell us a little about yourself and start the conversation.</p></div><a class="btn fill quick-apply-btn" href="#join-our-team" id="quickApplyButton">Apply Now →</a></div></section>
 <section class="sec light"><div class="w"><div class="eyebrow">Build Your Career With Locke-Lane</div><h2>One Team.<br>Two Divisions.<br><span class="o">Real Opportunity.</span></h2><p class="lead">At Locke-Lane, construction and electrical expertise come together on projects that make a visible impact. Our teams combine technical knowledge, field experience, coordination, and problem solving to deliver work we are proud to stand behind.</p><div class="grid"><div class="card pathway"><div class="card-num">01</div><h3>Construction</h3><div class="tag">Effective Construction Solutions</div><p>Build experience across civil infrastructure, utilities, water and wastewater, sitework, concrete, and project delivery.</p><a class="text-link" href="#construction">Explore Construction →</a></div><div class="card pathway"><div class="card-num">02</div><h3>Electrical</h3><div class="tag">Powering Infrastructure Forward</div><p>Develop your career through the planning, coordination, installation, and execution behind complex electrical projects.</p><a class="text-link" href="#electrical">Explore Electrical →</a></div></div></div></section>
 
 <section class="photo-story" aria-label="Locke-Lane Construction project experience">
@@ -773,7 +773,25 @@ section:before{content:"";position:absolute;left:0;top:0;width:68px;height:4px;b
 <section class="sec vet"><div class="vet-photo"><img loading="lazy" src="IMG_8924.JPEG" alt="Locke-Lane branded service truck"> </div><div class="w"><div class="cert"><div><div><div class="eyebrow">Built on Service</div><h2>Proudly Service-Disabled<br><span class="o">Veteran Owned.</span></h2><p class="lead">As a Service-Disabled Veteran-Owned Small Business, Locke-Lane is built on integrity, honesty and quality craftsmanship. We bring those values to every project through a commitment to safety, accountability, teamwork and delivering work we are proud to stand behind.</p></div></div></div></section>
 <section class="sec light"><div class="w"><div class="eyebrow">Careers at Locke-Lane</div><h2>Find Your Place.<br><span class="o">Build What’s Next.</span></h2><p class="lead">A career at Locke-Lane puts you close to the work. Collaborate with engineers, project managers, superintendents, skilled tradespeople, and industry partners while building practical experience across both the technical and field sides of project delivery.</p><div class="grid"><div class="card"><h3>Construction</h3><p>Civil Engineering • Construction Management • Project Management • Estimating • Field Operations • Project Coordination</p></div><div class="card"><h3>Electrical</h3><p>Electrical Engineering • Project Management • Estimating • Field Operations • Controls & Power Systems</p></div></div></div></section>
 <section id="join-our-team" class="sec"><div class="w"><div class="eyebrow">Join Our Team</div><h2>Build Your <span class="o">Future Here.</span></h2><p class="lead">Interested in Locke-Lane? Introduce yourself and send your résumé to our team.</p><div class="form"><form id="careerForm"><div class="fields"><input name="firstName" placeholder="First Name *" required><input name="lastName" placeholder="Last Name *" required><input class="full" type="email" name="email" placeholder="Email Address *" required><input name="phone" placeholder="Phone Number"><input name="school" placeholder="School"><input name="major" placeholder="Major"><input name="graduation" placeholder="Graduation Date"><select name="interest"><option value="">I'm interested in...</option><option>Construction</option><option>Electrical</option><option>Both</option></select><textarea class="full" name="message" placeholder="Tell us a little about yourself..."></textarea></div><div class="buttons"><button class="btn fill" id="careerSubmit" type="submit">Submit My Information →</button><a class="btn" href="mailto:info@lockelaneconstruction.com?subject=Locke-Lane%20Career%20Interest">Email Résumé →</a></div><p class="note" id="formStatus" aria-live="polite"></p></form></div></div></section>
-<footer class="foot"><div class="w"><strong>Real Work.<br><span class="o">Real Impact.</span><br>Real Careers.</strong><p>info@lockelaneconstruction.com · (704) 585-6625</p></div></footer><script>
+<footer class="foot"><div class="w"><strong>Real Work.<br><span class="o">Real Impact.</span><br>Real Careers.</strong><p>info@lockelaneconstruction.com · (704) 585-6625</p></div></footer><script id="reliable-apply-scroll">
+(function(){
+ const btn=document.getElementById('quickApplyButton');
+ const target=document.getElementById('join-our-team');
+ if(!btn||!target)return;
+ btn.addEventListener('click',function(e){
+  e.preventDefault();
+  const go=function(){target.scrollIntoView({behavior:'auto',block:'start'});};
+  go();
+  setTimeout(go,150);
+  setTimeout(go,450);
+  setTimeout(go,900);
+  setTimeout(function(){
+   go();
+   history.replaceState(null,'','#join-our-team');
+  },1400);
+ });
+})();
+</script><script>
 (function(){
  const form=document.getElementById('careerForm'),button=document.getElementById('careerSubmit'),status=document.getElementById('formStatus');
  const endpoint='https://script.google.com/macros/s/AKfycbxAUSO5kqbSpMJtxUZjBK58myEK1fWDYqdqwPh7VcEHObHsl0X-r-Qgl8OZo06x8S2C/exec';
