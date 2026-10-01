@@ -123,6 +123,55 @@ section:before{content:"";position:absolute;left:0;top:0;width:68px;height:4px;b
  .hero-bg{margin-top:78px!important}
  .hero .w{padding-top:36%!important}
 }
+</style><style>
+/* Editorial layout refinement: tighter rhythm, uncropped images, cleaner visual flow. */
+.photo-story{padding:22px 0 44px!important}
+.photo-board{width:min(1080px,calc(100% - 40px))!important;grid-template-columns:1.18fr .82fr!important;gap:8px!important;align-items:start!important}
+.photo-board figure{border:0!important}
+.photo-board figure img{display:block!important;width:100%!important;height:auto!important}
+.photo-stamp{left:50%!important;top:43%!important;padding:14px 20px!important;box-shadow:0 10px 28px rgba(0,0,0,.38)!important}
+.photo-stamp span,.photo-stamp b{font-size:32px!important}
+
+#construction.sec{padding-bottom:30px!important}
+.division-visual{width:min(1080px,calc(100% - 40px))!important;margin:0 auto 48px!important;grid-template-columns:1.55fr .75fr!important;gap:8px!important;align-items:end!important}
+.division-visual figure{overflow:hidden!important}
+.division-visual .dv-small{margin-bottom:34px!important}
+.division-visual .dv-label{bottom:4px!important;left:auto!important;right:18px!important;box-shadow:0 6px 18px rgba(0,0,0,.25)!important}
+
+.impact-strip{padding:54px 0!important}
+.electrical-visual{margin:42px auto 0!important;grid-template-columns:.72fr 1.55fr!important}
+.electrical-visual .dv-small{grid-column:1!important;grid-row:1!important;margin-bottom:34px!important}
+.electrical-visual .dv-main{grid-column:2!important;grid-row:1!important}
+.electrical-visual .dv-label{left:18px!important;right:auto!important}
+#electrical.sec{padding-top:54px!important}
+
+.vet{margin-top:0!important}
+.vet-photo{padding:18px!important}
+.vet-photo img{max-height:500px!important}
+
+@media(min-width:701px){
+ .photo-board .photo-b{margin-top:34px!important}
+ .photo-board .photo-c{margin-top:-2px!important}
+ .construction-visual .dv-small{transform:translateX(-24px)!important;z-index:2!important;box-shadow:0 14px 35px rgba(0,0,0,.28)!important}
+ .electrical-visual .dv-small{transform:translateX(24px)!important;z-index:2!important;box-shadow:0 14px 35px rgba(0,0,0,.28)!important}
+}
+@media(max-width:700px){
+ .photo-story{padding:12px 0 34px!important}
+ .photo-board{width:100%!important;gap:8px!important;padding:0 12px!important}
+ .photo-stamp{margin:-18px 0 4px 10px!important;padding:10px 14px!important}
+ .photo-stamp span,.photo-stamp b{font-size:25px!important}
+ #construction.sec{padding-bottom:22px!important}
+ .division-visual{width:100%!important;margin:0 auto 38px!important;padding:0 12px 26px!important;gap:8px!important}
+ .division-visual .dv-small{width:76%!important;margin:-22px 0 0 auto!important;z-index:2!important;box-shadow:0 12px 28px rgba(0,0,0,.3)!important}
+ .division-visual .dv-label{right:22px!important;left:auto!important;bottom:8px!important}
+ .impact-strip{padding:42px 0!important}
+ .electrical-visual{margin:28px auto 0!important}
+ .electrical-visual .dv-main{grid-column:1!important;grid-row:1!important}
+ .electrical-visual .dv-small{grid-column:1!important;grid-row:2!important;margin:-22px auto 0 0!important}
+ .electrical-visual .dv-label{left:22px!important;right:auto!important}
+ #electrical.sec{padding-top:44px!important}
+ .vet-photo{padding:0 12px!important}
+}
 </style></head><body>
 <header class="hero">
 <div class="hero-bg vision-bg">
