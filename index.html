@@ -481,6 +481,92 @@ section:before{content:"";position:absolute;left:0;top:0;width:68px;height:4px;b
  .favorite-gallery figure:nth-child(4){grid-column:3/span 4!important;transform:rotate(-.8deg) translateY(-6px)!important}
  .favorite-gallery img{max-height:175px!important}
 }
+</style><style id="professional-recruiting-gallery">
+/* Professional recruiting photo system — clean editorial / architectural */
+.favorite-gallery{
+ width:min(1080px,calc(100% - 40px))!important;
+ margin:0 auto!important;
+ padding:0!important;
+ display:grid!important;
+ grid-template-columns:repeat(12,minmax(0,1fr))!important;
+ grid-auto-flow:dense!important;
+ gap:10px!important;
+ align-items:center!important;
+ background:transparent!important;
+ isolation:auto!important
+}
+.favorite-gallery:before,.favorite-gallery:after{display:none!important}
+.favorite-gallery figure,
+.favorite-gallery figure:nth-child(n){
+ position:relative!important;
+ inset:auto!important;
+ margin:0!important;
+ padding:0!important;
+ background:#111!important;
+ border:0!important;
+ border-radius:0!important;
+ box-shadow:none!important;
+ clip-path:none!important;
+ transform:none!important;
+ grid-row:auto!important;
+ overflow:hidden!important
+}
+.favorite-gallery figure:before,.favorite-gallery figure:after{display:none!important}
+.favorite-gallery img{
+ display:block!important;
+ width:100%!important;
+ height:auto!important;
+ max-height:235px!important;
+ object-fit:contain!important;
+ object-position:center!important;
+ padding:0!important;
+ margin:0!important;
+ background:#111!important;
+ filter:none!important
+}
+/* Opening construction portfolio: one anchor + supporting project tiles */
+.construction-gallery figure:nth-child(1){grid-column:1/span 6!important}
+.construction-gallery figure:nth-child(2){grid-column:7/span 3!important}
+.construction-gallery figure:nth-child(3){grid-column:10/span 3!important}
+.construction-gallery figure:nth-child(4){grid-column:1/span 3!important}
+.construction-gallery figure:nth-child(5){grid-column:4/span 4!important}
+.construction-gallery figure:nth-child(6){grid-column:8/span 5!important}
+/* Division galleries: polished project-wall rhythm */
+.division-gallery figure:nth-child(1){grid-column:1/span 5!important}
+.division-gallery figure:nth-child(2){grid-column:6/span 3!important}
+.division-gallery figure:nth-child(3){grid-column:9/span 4!important}
+.division-gallery figure:nth-child(4){grid-column:1/span 4!important}
+.division-gallery figure:nth-child(5){grid-column:5/span 4!important}
+.division-gallery figure:nth-child(6){grid-column:9/span 4!important}
+.division-gallery figure:nth-child(7){grid-column:3/span 4!important}
+.favorite-gallery figcaption{
+ position:absolute!important;
+ left:0!important;
+ bottom:0!important;
+ padding:7px 10px!important;
+ background:rgba(12,13,14,.88)!important;
+ color:#fff!important;
+ border:0!important;
+ border-left:3px solid var(--o)!important;
+ font-size:9px!important;
+ line-height:1!important;
+ letter-spacing:1.3px!important;
+ font-weight:800!important;
+ backdrop-filter:blur(5px)
+}
+/* restrained brand detail, not decoration */
+.construction-gallery{border-left:3px solid var(--o)!important;padding-left:12px!important}
+.electrical-visual.division-gallery{border-right:3px solid var(--o)!important;padding-right:12px!important}
+.photo-story{padding:10px 0 34px!important}
+.division-gallery,.electrical-visual.division-gallery{height:auto!important;margin:18px auto 38px!important}
+@media(max-width:700px){
+ .favorite-gallery{width:calc(100% - 24px)!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important}
+ .favorite-gallery figure:nth-child(n){grid-column:auto!important}
+ .favorite-gallery figure:nth-child(1){grid-column:1/-1!important}
+ .favorite-gallery img{max-height:190px!important}
+ .construction-gallery{padding-left:8px!important}
+ .electrical-visual.division-gallery{padding-right:8px!important}
+}
 </style></head><body>
 <header class="hero">
 <div class="hero-bg vision-bg">
