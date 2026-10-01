@@ -102,6 +102,27 @@ section:before{content:"";position:absolute;left:0;top:0;width:68px;height:4px;b
  .vet-photo:after{background:linear-gradient(0deg,#191919 0%,transparent 22%)!important}
  .vet .w{order:2!important;padding-top:46px!important;padding-bottom:46px!important}
 }
+</style><style>
+/* Final visual polish: one seamless white logo banner + uncropped project photography. */
+.top-brand-banner{position:absolute;z-index:8;top:0;left:0;right:0;background:#fff;border-bottom:5px solid var(--o);box-shadow:0 8px 28px rgba(0,0,0,.24)}
+.top-brand-inner{width:min(1080px,100%);margin:auto;padding:12px 20px;display:flex;align-items:center;gap:24px;min-height:96px}
+.top-brand-inner img{display:block;width:auto;height:auto;object-fit:contain;background:transparent!important;padding:0!important}
+.top-brand-inner .logo-construction{max-width:245px;max-height:70px}
+.top-brand-inner .logo-electric{max-width:245px;max-height:66px}
+.top-brand-divider{width:2px;height:58px;background:#d8d8d8;flex:0 0 2px}
+.hero-bg{margin-top:96px!important}
+.hero .w{padding-top:118px!important}
+.photo-board figure,.division-visual figure{background:#0f1011!important}
+.photo-board img,.division-visual img,.vet-photo img{object-fit:contain!important;object-position:center!important}
+.photo-board figure img,.division-visual figure img{aspect-ratio:auto!important}
+@media(max-width:700px){
+ .top-brand-inner{min-height:78px;padding:9px 16px;gap:12px;justify-content:center}
+ .top-brand-inner .logo-construction{max-width:43vw;max-height:54px}
+ .top-brand-inner .logo-electric{max-width:43vw;max-height:50px}
+ .top-brand-divider{height:46px}
+ .hero-bg{margin-top:78px!important}
+ .hero .w{padding-top:36%!important}
+}
 </style></head><body>
 <header class="hero">
 <div class="hero-bg vision-bg">
@@ -109,12 +130,14 @@ section:before{content:"";position:absolute;left:0;top:0;width:68px;height:4px;b
   <img class="hero-cut hero-cut-one" src="IMG_0192.JPEG" alt="Locke-Lane field project" fetchpriority="high">
   <img class="hero-cut hero-cut-two" src="IMG_6819.JPEG" alt="Locke-Lane infrastructure project" fetchpriority="high">
 </div>
-<div class="w">
-  <div class="brandbar">
-    <div class="brand-unit construction-brand"><img class="logo-construction" src="LLC_logo_061118.png" alt="Locke-Lane Construction"></div>
-    <div class="brand-divider"></div>
-    <div class="brand-unit electric-brand"><img class="logo-electric" src="LOCKE LANE ELECTRIC (002).jpg" alt="Locke-Lane Electric"></div>
+<div class="top-brand-banner" aria-label="Locke-Lane Construction and Locke-Lane Electric">
+  <div class="top-brand-inner">
+    <img class="logo-construction" src="LLC_logo_061118.png" alt="Locke-Lane Construction">
+    <span class="top-brand-divider" aria-hidden="true"></span>
+    <img class="logo-electric" src="LOCKE LANE ELECTRIC (002).jpg" alt="Locke-Lane Electric">
   </div>
+</div>
+<div class="w">
   <div class="eyebrow">LOCKE-LANE CONSTRUCTION + LOCKE-LANE ELECTRIC</div>
   <h1>Build. <span class="o">Power.</span> Impact.</h1>
   <p>Build your career on projects that matter.</p>
